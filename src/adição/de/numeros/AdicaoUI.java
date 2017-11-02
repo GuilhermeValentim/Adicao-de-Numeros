@@ -140,7 +140,7 @@ public class AdicaoUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void id_adicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_id_adicionarActionPerformed
-        /*Variáveis que vão atribuidas aos números */
+        /*Variáveis que vão ser atribuidas aos números */
         int num1, num2, resultado;
         
         /*ENTRADA*/
