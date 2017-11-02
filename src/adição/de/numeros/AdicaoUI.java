@@ -140,23 +140,32 @@ public class AdicaoUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void id_adicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_id_adicionarActionPerformed
+        /*Variáveis que vão atribuidas aos números */
         int num1, num2, resultado;
-
+        
+        /*ENTRADA*/
+        /*Como o Input é apenas de String, preciso converter a String para um Inteiro */
         num1 = Integer.parseInt(id_num1.getText());
         num2 = Integer.parseInt(id_num2.getText());
-
+        
+        /*PROCESSAMENTO*/
+        /*Onde ocorre o cálculo. O resultado irá ser armazenado na variável "resultado" */
         resultado = num1 + num2;
-
+        
+        /*SAÍDA*/
+        /*Agora, preciso converter de Inteiro para String utilizando o String.valueOf */
         id_resultado.setText(String.valueOf(resultado));
     }//GEN-LAST:event_id_adicionarActionPerformed
 
     private void id_limparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_id_limparActionPerformed
+        /*Ao pressionar o botão "Limpar", coloco todos os campos como vazio */
         id_num1.setText("");
         id_resultado.setText("");
         id_num2.setText("");
     }//GEN-LAST:event_id_limparActionPerformed
 
     private void id_sairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_id_sairActionPerformed
+        /*Ao pressionar o botão "Sair" */
         System.exit(0);
     }//GEN-LAST:event_id_sairActionPerformed
 
